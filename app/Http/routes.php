@@ -17,3 +17,7 @@ get('/', function () {
 
 get('blog', 'BlogController@index');
 get('blog/{slug}', 'BlogController@showPost');
+
+get('auth/login' , 'Auth\AuthController@getlogin');
+get('auth/register' , 'Auth\AuthController@getRegister');
+post('auth/login' , 'Auth\AuthController@postLogin');
