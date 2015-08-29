@@ -11,6 +11,9 @@
 |
 */
 
+get('/home', function () {
+    return redirect('/blog');
+});
 get('/', function () {
     return redirect('/blog');
 });
@@ -20,4 +23,6 @@ get('blog/{slug}', 'BlogController@showPost');
 
 get('auth/login' , 'Auth\AuthController@getlogin');
 get('auth/register' , 'Auth\AuthController@getRegister');
+post('auth/register' , 'Auth\AuthController@postRegister');
 post('auth/login' , 'Auth\AuthController@postLogin');
+Route::controller('auth', 'Auth\AuthController');

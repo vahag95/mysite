@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use Validator;
+use Auth;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
@@ -67,4 +69,25 @@ class AuthController extends Controller
     {
         return view('auth.login');
     }
+
+    protected function getRegister()
+    {
+        return view('auth.register');
+    }
+
+    protected function postRegister( Request $request )
+    {
+        if( null!== $user = $this->create( $request->all() ) )
+        {
+            Auth::login( $user );
+            return redirect('/');
+        }
+    }
+
+    private function getLogout()
+    {
+        Auth::logout();
+        // return redirect('');
+    }
+
 }
