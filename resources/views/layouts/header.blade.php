@@ -1,4 +1,4 @@
-<nav class='navbar navbar-inverse main_menu' id="navBar">
+<nav class='navbar navbar-inverse navbar-fixed-top main_menu' id="navBar">
     <div class='navbar-header @if (Auth::guest()) login_page_style @endif'>
         <button class='navbar-toggle collapsed' data-target='#main_navbar' data-toggle='collapse' type='button'>
             <span class='sr-only'>Toggle navigation</span>
