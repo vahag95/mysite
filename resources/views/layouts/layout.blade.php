@@ -27,7 +27,7 @@
                         <span class='icon-bar'></span>
                     </button>
                     <div>
-                        <a href="/widgets"><img class='navbar-brand img-responsive' id="imgLogo" src="{{url('/assets/img/voiceStackLogo.png')}}"></a>
+                        {{-- <a href="/widgets"><img class='navbar-brand img-responsive' id="imgLogo" src="{{url('/assets/img/voiceStackLogo.png')}}"></a> --}}
                     </div>
                 </div>
                 <div class='collapse navbar-collapse' id='main_navbar'>
@@ -54,6 +54,7 @@
                                         <li @if(Request::is('settings*')) class="active" @endif><a href="{{ url('/settings') }}">Integrations</a></li>
                                     @endif
                                     <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+                                    <li><a href="{{ url('/account') }}">My Account</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -76,6 +77,7 @@
             <div class="container-fluid">
             
             @yield('content')
+            @yield('scripts')
         </div>
     </body>
 </htnl>

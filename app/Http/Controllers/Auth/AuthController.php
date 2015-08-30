@@ -41,7 +41,7 @@ class AuthController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-    protected function validator(array $data)
+    public function validator(array $data)
     {
         return Validator::make($data, [
             'name' => 'required|max:255',
@@ -56,7 +56,7 @@ class AuthController extends Controller
      * @param  array  $data
      * @return User
      */
-    protected function create(array $data)
+    public function create(array $data)
     {
         return User::create([
             'name' => $data['name'],
@@ -65,17 +65,17 @@ class AuthController extends Controller
         ]);
     }
 
-    protected function getLogin()
+    public function getLogin()
     {
         return view('auth.login');
     }
 
-    protected function getRegister()
+    public function getRegister()
     {
         return view('auth.register');
     }
 
-    protected function postRegister( Request $request )
+    public function postRegister( Request $request )
     {
         if( null!== $user = $this->create( $request->all() ) )
         {
@@ -84,10 +84,10 @@ class AuthController extends Controller
         }
     }
 
-    private function getLogout()
+    public function getLogout()
     {
         Auth::logout();
-        // return redirect('');
+        return redirect('/');
     }
 
 }

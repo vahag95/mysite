@@ -20,9 +20,11 @@ get('/', function () {
 
 get('blog', 'BlogController@index');
 get('blog/{slug}', 'BlogController@showPost');
-
-get('auth/login' , 'Auth\AuthController@getlogin');
-get('auth/register' , 'Auth\AuthController@getRegister');
-post('auth/register' , 'Auth\AuthController@postRegister');
-post('auth/login' , 'Auth\AuthController@postLogin');
-Route::controller('auth', 'Auth\AuthController');
+Route::resource('account' , 'AccountController');
+Route::controller( 'auth' , 'Auth\AuthController' );
+// get('auth/login' , 'Auth\AuthController@getlogin');
+// get('auth/register' , 'Auth\AuthController@getRegister');
+// post('auth/register' , 'Auth\AuthController@postRegister');
+// post('auth/login' , 'Auth\AuthController@postLogin');
+// get('auth/logout' , 'Auth\AuthController@getLogout');
+// Route::controller('auth', 'Auth\AuthController');

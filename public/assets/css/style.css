@@ -11376,3 +11376,75 @@ input[readonly] {
   /*////////////////////////////////////////////////////*/ }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.vt-page-header .vt-page-title {
+    width: 100%;
+}
+.vt-page-header .vt-page-controller {
+    border-top: 1px solid #888;
+    padding-top: 1em;
+}
+.vt-page-header .vt-page-controller {
+    width: 100%;
+}
+.vt-page-header .vt-page-controller a.ml10 {
+    margin-left: 0 !important;
+}
+.vt-page-header .vt-page-controller form,
+.vt-page-header .vt-page-controller .bootstrap-select {
+    width: 100% !important;
+    margin-bottom: 0.2em;
+}
+.vt-page-header .vt-page-controller .btn {
+    float: left !important;
+}
+.container-fluid .vt-page-header {
+   padding: 1.15em 1.5em 1em;
+   margin: 0 auto;
+}
+.container-fluid .vt-page-header .vt-page-title {
+    float: left;
+}
+.container-fluid .vt-page-header .vt-page-title h3 {
+    font-weight: 300;
+    color: #FFF;
+    font-family: "Montserrat";
+}
+.container-fluid .vt-page-header .vt-page-title h3 i {
+    position: relative;
+    top: 2.3px;
+    left: -2px;
+}
+.container-fluid .vt-page-header .vt-page-controller {
+    float: right;
+    display: inline-block;
+}
+.container-fluid .vt-page-header .vt-page-controller form {
+    display: block;
+    float: left;
+    margin-right: 1em;
+}
+.container-fluid .vt-page-header .vt-page-controller a.btn {
+    display: block;
+    float: left;
+    width: auto;
+}
+.container-fluid .vt-page-header .vt-page-controller a.btn.extra {
+    margin-left: 0.3em;
+}
+    margin: 0 0;
+}
+.container-fluid .vt-page {
+    width: 100%;
+    background: #E1E9EF;
+    margin: 0em auto;
+}
+.container-fluid .vt-page .vt-default-page {
+    padding: 2em 3em 5em;
+    max-width: 980px;
+}
+.vt-settings-container .avatar-upload-container .img-avatar {
+    position: absolute;
+    top: 0;
+}
