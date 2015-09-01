@@ -13,6 +13,9 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'/>
         <link href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="/assets/css/design/dev.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/design/styles.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/design/rwd.css" rel="stylesheet" type="text/css" />
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>        
     </head>
